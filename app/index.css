@@ -41,19 +41,23 @@ body {
   opacity: 0.6;
 }
 
-.weather-icon {
-  margin-top: 5px;
+.bold-font {
+  font-size: 1050%;
+  font-weight: 500;
 }
 
-.temperature {
-  font-size: 150%;
+.medium-font {
+  font-size: 250%;
 }
 
 .small-font {
   font-size: 65%;
 }
 
-.bold-font {
-  font-size: 1050%;
-  font-weight: 500;
+.weather-icon {
+  margin-top: 5px;
+}
+
+.temperature {
+  font-size: 150%;
 }
