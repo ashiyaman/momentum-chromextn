@@ -1,5 +1,7 @@
 body {
+  background: url(https://source.unsplash.com/category/nature/1920x1080);
   border: 1px solid #000;
+  color: #fff;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
   height: 100%;
   margin: 0;
@@ -38,7 +40,7 @@ body {
 }
 
 .opacity{
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .bold-font {

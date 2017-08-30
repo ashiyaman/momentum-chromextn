@@ -7,6 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='container'>
+
         <div className={'space-between'}>
           <div>Links</div>
           <Weather />
@@ -21,6 +22,7 @@ class App extends React.Component {
           <div>Quote</div>
           <div>Todo List</div>
         </div>
+
       </div>
     )
   }
