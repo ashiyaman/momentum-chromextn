@@ -3,7 +3,6 @@ var React = require('react');
 class Greeting extends React.Component {
   render() {
     let time = new Date();
-    console.log("time...", time.getHours());
     let greeting
     if ((time.getHours() >= 12) && (time.getHours() <= 17)) {
       greeting = 'afternoon'
