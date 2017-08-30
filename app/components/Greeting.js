@@ -1,7 +1,7 @@
 var React = require('react');
 
-class Greeting extends React.Component {
-  render() {
+function Greeting() {
+
     let time = new Date();
     let greeting
     if ((time.getHours() >= 12) && (time.getHours() <= 17)) {
@@ -18,7 +18,7 @@ class Greeting extends React.Component {
         Good {greeting} , Ashiya.
       </h2>
     )
-  }
+
 }
 
 module.exports = Greeting;
