@@ -39,8 +39,8 @@ class Weather extends React.Component{
       })
   }
 
-  getPosition() {
-    return new Promise((resolve, reject) => {
+  getPosition = () => {
+    return new Promise((reject) => {
       // Get latitude and longitude
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -60,7 +60,7 @@ class Weather extends React.Component{
     });
   }
 
-  handleChange(event) {
+  handleChange = (event) => {
     if(event.key === 'Enter') {
       let city = event.target.value
       this.setState(() => {
@@ -84,7 +84,10 @@ class Weather extends React.Component{
   }
 
   render() {
-    let weatherIconURL = 'https://openweathermap.org/img/w/' + this.state.icon + '.png';
+    let weatherIconURL;
+    if (this.state.city) {
+      weatherIconURL = 'https://openweathermap.org/img/w/' + this.state.icon + '.png';
+    }
     let error = this.state.error;
     if(error) {
       return (
