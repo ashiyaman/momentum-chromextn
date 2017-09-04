@@ -40,7 +40,7 @@ class Weather extends React.Component{
   }
 
   getPosition = () => {
-    return new Promise((reject) => {
+    return new Promise((resolve, reject) => {
       // Get latitude and longitude
       navigator.geolocation.getCurrentPosition(
         (position) => {
