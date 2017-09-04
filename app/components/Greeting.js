@@ -14,9 +14,9 @@ function Greeting() {
       greeting = 'morning'
     }
     return (
-      <h2 className='medium-font'>
+      <h1 className={'large-font' + ' ' + 'margin'}>
         Good {greeting} , Ashiya.
-      </h2>
+      </h1>
     )
 
 }

@@ -89,7 +89,7 @@ class Weather extends React.Component{
     if(error) {
       return (
         <div>
-          <p className='font'>{error}</p>
+          <p className='small-font'>{error}</p>
           <input
             type='text'
             autoComplete ='off'
