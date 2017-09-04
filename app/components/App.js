@@ -2,12 +2,12 @@ var React = require('react');
 var Weather = require('./Weather');
 var Time = require('./Time');
 var Greeting = require('./Greeting');
+var Focus = require('./Focus');
 
 class App extends React.Component {
   render() {
     return (
       <div className='container'>
-
         <div className={'space-between'}>
           <div>Links</div>
           <Weather />
@@ -15,7 +15,7 @@ class App extends React.Component {
         <div>
           <Time />
           <Greeting />
-          <div>Todo</div>
+          <Focus />
         </div>
         <div className='space-between'>
           <div>Settings</div>

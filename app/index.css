@@ -9,9 +9,29 @@ body {
   width: 100%;
 }
 
+body * {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   display: flex;
   margin: 2%;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type=text] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 100%;
+  min-width: 50%;
+  outline: none;
   text-align: center;
 }
 
@@ -43,13 +63,27 @@ body {
   opacity: 0.8;
 }
 
+.margin {
+  margin: 0;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
 .bold-font {
   font-size: 1050%;
   font-weight: 500;
 }
 
+.large-font {
+  font-size: 340%;
+  font-weight: 500;
+}
+
 .medium-font {
-  font-size: 250%;
+  font-size: 200%;
+  font-weight: 300;
 }
 
 .small-font {
@@ -62,4 +96,42 @@ body {
 
 .temperature {
   font-size: 150%;
+}
+
+.focus-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.focus-item{
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.focus-item * {
+  font-size: 100%;
+  margin: 0 1%;
+}
+
+.focus-item span {
+  cursor: pointer
+}
+
+.checkbox {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20%;
+  margin-top: 1%;
+  height: 15px;
+  width: 15px;
+}
+
+.checked {
+  background: #fff;
+}
+
+.done {
+  text-decoration: line-through;
 }
