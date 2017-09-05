@@ -13,7 +13,6 @@ class Quotes extends React.Component {
   componentDidMount() {
     api.getQuotes()
       .then((response) => {
-        console.log("respo...", response)
         this.setState(() => {
           return {
             quote: response
@@ -24,7 +23,7 @@ class Quotes extends React.Component {
 
   render() {
     return (
-      <p><strong>{this.state.quote}</strong></p>
+      <p className='quote-container'><strong>"{this.state.quote}."</strong></p>
     )
   }
 }

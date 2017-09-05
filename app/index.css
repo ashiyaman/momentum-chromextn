@@ -138,3 +138,7 @@ input[type=text] {
 .done {
   text-decoration: line-through;
 }
+
+.quote-container {
+  padding: 0 14%;
+}

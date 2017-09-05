@@ -39,7 +39,7 @@ module.exports = {
   getQuotes: () => {
     //let base_url = `http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en`
     //let base_url = `https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1`
-    let base_url = `https://andruxnet-random-famous-quotes.p.mashape.com/?cat=inspiration`
+    let base_url = `https://andruxnet-random-famous-quotes.p.mashape.com/`
 
     return axios.get(base_url,{
       headers: {'X-Mashape-Key': QUOTES_API_KEY}
