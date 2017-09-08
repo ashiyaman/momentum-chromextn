@@ -37,7 +37,7 @@ class Todo extends React.Component {
   render() {
     let count = this.state.todos.length
     return (
-      <div className='todoContainer'>
+      <div className='todoContainer modal'>
         <p className='flex-start'>0 of {count}</p>
         {count > 0
           ? <ul className='column'>

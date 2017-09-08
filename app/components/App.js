@@ -1,4 +1,5 @@
 var React = require('react');
+var LinksContainer = require('./LinksContainer')
 var Weather = require('./Weather');
 var Time = require('./Time');
 var Greeting = require('./Greeting');
@@ -11,7 +12,7 @@ class App extends React.Component {
     return (
       <div className='container'>
         <div className={'space-between'}>
-          <div>Links</div>
+          <LinksContainer />
           <Weather />
         </div>
         <div className='main-content'>
