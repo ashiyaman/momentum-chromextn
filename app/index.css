@@ -148,7 +148,7 @@ input[type=text] {
   padding: 0 14%;
 }
 
-.todo-container {
+.todoContainer {
   background: rgba(15,15,15,.925);
   border-radius: 2%;
   bottom: 9%;
@@ -162,16 +162,24 @@ input[type=text] {
   z-index: 1;
 }
 
-.todo-container > p, input, div{
+.todoContainer > div{
   margin: 0 3%;
 }
 
-.todo-container input[type='text'] {
+.todoContainer > ul{
+  margin: 0 3%;
+}
+
+.todoContainer > p{
+  margin: 0 3%;
+}
+
+.todoContainer input[type='text'] {
   border-bottom: 0 !important;
   text-align: left !important;
 }
 
-.todo-container > ul > li > .row {
+.todoContainer > ul > li > .row {
   justify-content: space-between;
 }
 
