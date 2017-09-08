@@ -3,7 +3,9 @@ var Weather = require('./Weather');
 var Time = require('./Time');
 var Greeting = require('./Greeting');
 var Focus = require('./Focus');
-var Quotes = require('./Quotes');
+//var Quotes = require('./Quotes');
+//var Todo = require('./Todo');
+var TodoContainer = require('./TodoContainer');
 
 class App extends React.Component {
   render() {
@@ -20,8 +22,7 @@ class App extends React.Component {
         </div>
         <div className='space-between'>
           <div>Settings</div>
-          <Quotes />
-          <div>Todo List</div>
+          <TodoContainer />
         </div>
 
       </div>

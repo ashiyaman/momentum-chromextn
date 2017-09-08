@@ -15,7 +15,7 @@ body * {
   text-align: center;
 }
 
-ul {
+ul, li{
   list-style: none;
 }
 
@@ -34,6 +34,7 @@ input[type=text] {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
   width: 100%;
 }
 
@@ -56,6 +57,11 @@ input[type=text] {
   display: flex;
   justify-content: space-between;
   margin: 2%;
+}
+
+.flex-start {
+  align-self: flex-start;
+  display: flex;
 }
 
 .upper-case {
@@ -107,18 +113,16 @@ input[type=text] {
   margin-top: 8%;
 }
 
-.focus-item{
+.focus-container > div > li {
   display: flex;
   justify-content: center;
-  margin-top: 1%;
 }
 
-.focus-item * {
-  font-size: 100%;
-  margin: 0 1%;
+.focus-container > div > li > div > div > p {
+  margin-right: 30px;
 }
 
-.focus-item span {
+.cursor {
   cursor: pointer
 }
 
@@ -126,9 +130,10 @@ input[type=text] {
   background: transparent;
   border: 1px solid #fff;
   border-radius: 20%;
+  margin-right: 10px;
   margin-top: 0.5%;
-  height: 15px;
-  width: 15px;
+  min-height: 15px;
+  min-width: 15px;
 }
 
 .checked {
@@ -141,4 +146,43 @@ input[type=text] {
 
 .quote-container {
   padding: 0 14%;
+}
+
+.todo-container {
+  background: rgba(15,15,15,.925);
+  border-radius: 2%;
+  bottom: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 30%;
+  min-width: 33%;
+  right: 1%;
+  position: absolute;
+  z-index: 1;
+}
+
+.todo-container > p, input, div{
+  margin: 0 3%;
+}
+
+.todo-container input[type='text'] {
+  border-bottom: 0 !important;
+  text-align: left !important;
+}
+
+.todo-container > ul > li > .row {
+  justify-content: space-between;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: default;
+  padding-left: 23%;
+}
+
+.list-item{
+  margin: 2% 0;
 }
