@@ -8,7 +8,7 @@ function LinkPreview(props) {
           className='icon'
           src={require('../images/chromeTab.png')}/>Chrome Tab</a>
       </li>
-      <li><a href='chrome://apps/'>
+      <li><a href=''>
         <img
           className='icon'
           src={require('../images/apps.png')} />
@@ -28,7 +28,6 @@ class LinksContainer extends React.Component {
   }
 
   toggleModal = () => {
-    console.log("modalll...", this.state.showModal)
     this.setState(() => {
       return {
         showModal : !this.state.showModal
