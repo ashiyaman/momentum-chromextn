@@ -23,6 +23,7 @@ class LinksContainer extends React.Component {
     super(props);
 
     this.state = {
+      show: true,
       showModal: false
     }
   }
@@ -36,15 +37,20 @@ class LinksContainer extends React.Component {
   }
 
   render() {
+    let show = this.state.show
     return (
-      <div
-        className = 'cursor'
-        onClick={this.toggleModal}>
-        Links
+      <div>
+      {show &&
+          <div
+            className = 'cursor'
+            onClick={this.toggleModal}>
+            Links
 
-        {this.state.showModal &&
-          <LinkPreview />
-        }
+            {this.state.showModal &&
+              <LinkPreview />
+            }
+          </div>
+      }
       </div>
     )
   }
