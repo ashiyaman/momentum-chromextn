@@ -24,8 +24,6 @@ constructor(props) {
 toggleDisplay = (name) => {
   let property = `display${name}`
   let value = !this.state[property]
-  console.log("prop..........", property)
-  console.log("value..........", value)
   this.setState({ [property]: value }, () => {
     return {
       property: value

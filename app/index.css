@@ -252,20 +252,6 @@ input[type=text] {
   background: #fff;
   border-radius: 6px;
   height: 12px;
-  left: 4px;
-  opacity: 0.4;
-  position: absolute;
-  top: 4px;
-  width: 12px;
-  z-index: 1;
-}
-
-.slider-on {
-  background: #fff;
-  border-radius: 6px;
-  height: 12px;
-  right: 4px;
-  opacity: 1;
   position: absolute;
   top: 4px;
   width: 12px;
