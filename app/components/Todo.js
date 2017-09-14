@@ -23,23 +23,45 @@ class Todo extends React.Component {
   addItem = (event) =>  {
     event.preventDefault();
     this.setState(previousState => ({
-      todos: [...previousState.todos, this.state.currentItem],
-      currentItem: ''
+      todos: [...previousState.todos, this.state.currentItem]
     }));
+
+    let todoList = JSON.parse(localStorage.getItem('todos'))
+    todoList.push(this.state.currentItem)
+    localStorage.setItem('todos', JSON.stringify(todoList))
+
+    this.setState(() => {
+      return {
+        currentItem: ''
+      }
+    })
   }
 
   removeItem = (index) => {
     let array = this.state.todos;
     array.splice(index, 1);
     this.setState({todos: array})
+
+    localStorage.setItem('todos', JSON.stringify(array))
+  }
+
+  componentWillMount() {
+    let todoList = JSON.parse(localStorage.getItem('todos'))
+    {todoList !== null
+     ? this.setState(() => {
+         return {
+           todos: todoList
+         }
+       })
+      : localStorage.setItem('todos', JSON.stringify([]))
+    }
   }
 
   render() {
     let count = this.state.todos.length
     return (
       <div className='todoContainer modal'>
-        <p className='flex-start'>0 of {count}</p>
-        {count > 0
+          {count > 0
           ? <ul className='column'>
               {this.state.todos.map((todo, index) => {
                 return (

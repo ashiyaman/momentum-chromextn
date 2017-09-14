@@ -3,7 +3,7 @@ var React = require('react');
 function LinkPreview(props) {
   return (
     <ul className='modal linksContainer'>
-      <li><a href='#'>
+      <li><a href=''>
         <img
           className='icon'
           src={require('../images/chromeTab.png')}/>Chrome Tab</a>

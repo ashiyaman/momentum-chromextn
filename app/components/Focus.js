@@ -30,6 +30,10 @@ class Focus extends React.Component {
           focusItem: [...this.state.focusItem, focusItem]
         }
       })
+
+      let focus = JSON.parse(localStorage.getItem('focus'))
+      focus.push(focusItem)
+      localStorage.setItem('focus', JSON.stringify(focus))
     }
   }
 
@@ -37,6 +41,20 @@ class Focus extends React.Component {
     var array = this.state.focusItem;
     array.splice(index, 1);
     this.setState({focusItem: array})
+
+    localStorage.setItem('focus', JSON.stringify(this.state.focusItem))
+  }
+
+  componentWillMount() {
+    let focus = JSON.parse(localStorage.getItem('focus'))
+    { focus !== null
+      ? this.setState(() => {
+        return {
+          focusItem: focus
+        }
+      })
+      : localStorage.setItem('focus', JSON.stringify([]))
+    }
   }
 
   render() {

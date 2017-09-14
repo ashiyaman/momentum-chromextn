@@ -248,7 +248,7 @@ input[type=text] {
   width: 50px;
 }
 
-.slider{
+.slider {
   background: #fff;
   border-radius: 6px;
   height: 12px;
@@ -256,4 +256,8 @@ input[type=text] {
   top: 4px;
   width: 12px;
   z-index: 1;
+}
+
+.margin-auto {
+  margin: auto
 }

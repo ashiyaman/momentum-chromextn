@@ -8,7 +8,7 @@ function SettingsPreview(props) {
         onClick={props.toggleSlider.bind(null, 'Links')}>Links
         <label className=' toggle-switch'>
             <span  className='slider'
-              style = {props.displayLinks === true  ? {opacity: '0.15', left: '6px'} : {opacity: '1', right: '6px'}}
+              style = {props.displayLinks === true  ? {opacity: '1', right: '6px'} : {opacity: '0.15', left: '6px'}}
             ></span>
         </label>
       </li>
@@ -17,7 +17,7 @@ function SettingsPreview(props) {
         onClick={props.toggleSlider.bind(null, 'Weather')}>Weather
         <label className=' toggle-switch'>
           <span className='slider'
-            style = {props.displayWeather === true  ? {opacity: '0.15', left: '6px'} : {opacity: '1', right: '6px'}}
+            style = {props.displayWeather === true  ? {opacity: '1', right: '6px'} : {opacity: '0.15', left: '6px'}}
           ></span>
         </label>
       </li>
@@ -26,7 +26,7 @@ function SettingsPreview(props) {
         onClick={props.toggleSlider.bind(null, 'Quote')}>Quotes
         <label className=' toggle-switch'>
           <span className='slider'
-            style = {props.displayQuote === true  ? {opacity: '0.15', left: '6px'} : {opacity: '1', right: '6px'}}
+            style = {props.displayQuote === true  ? {opacity: '1', right: '6px'} : {opacity: '0.15', left: '6px'}}
           ></span>
         </label>
       </li>
@@ -35,7 +35,7 @@ function SettingsPreview(props) {
         onClick={props.toggleSlider.bind(null, 'Todo')}>Todo
         <label className=' toggle-switch'>
           <span className='slider'
-            style = {props.displayTodo === true  ? {opacity: '0.15', left: '6px'} : {opacity: '1', right: '6px'}}
+            style = {props.displayTodo === true  ? {opacity: '1', right: '6px'} : {opacity: '0.15', left: '6px'}}
           ></span>
         </label>
       </li>
